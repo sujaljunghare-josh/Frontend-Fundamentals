@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1: Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background-color: #f8f9fa; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+
+        .card { 
+            background: #ffffff; 
+            width: 320px; 
+            padding: 40px 20px; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1); 
+            text-align: center; /* Center Alignment  */
+        }
+
+        /* Businessman avatar style */
+        .profile-img { 
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            background-color: #e9ecef;
+            margin: 0 auto 15px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Font Hierarchy  */
+        h2 { 
+            margin: 0; 
+            font-size: 1.5rem; 
+            color: #212529; /* Name: John Doe [cite: 11] */
+        }
+
+        .designation { 
+            color: #6c757d; 
+            font-size: 0.95rem; 
+            margin: 5px 0 15px; /* Designation: Software Engineer [cite: 12] */
+        }
+
+        .bio { 
+            font-size: 0.9rem; 
+            color: #495057; 
+            line-height: 1.4; 
+            margin-bottom: 25px; /* Bio: [cite: 13] */
+        }
+
+        /* Social media icon buttons  */
+        .social-links { 
+            display: flex; 
+            justify-content: center; 
+            gap: 15px; 
+        }
+
+        .social-links i {
+            font-size: 28px; /* Consistent icon sizing  */
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        /* Custom colors for social icons */
+        .fa-github { color: #24292e; }
+        .fa-twitter { color: #1da1f2; }
+        .fa-linkedin { color: #0077b5; }
+
+        .social-links i:hover { opacity: 0.7; }
+        .nav-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);}
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png" 
+             alt="John Doe" 
+             class="profile-img">
+             
+        <h2>John Doe</h2> 
+        <div class="designation">Software Engineer</div> 
+        <p class="bio">Loves building clean UIs and solving real-world problems with code.</p> 
+        
+        <div class="social-links">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-twitter" style="color: #1da1f2;"></i>
+            <i class="fa-brands fa-linkedin" style="color: #0077b5;"></i>
+        </div>
+    </div>
+    <a href="Price_card.html" class="nav-button">Assignment 2 →</a>
+
+</body>
+</html>

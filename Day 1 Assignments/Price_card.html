@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2: Pricing Grid</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f9f9f9; padding: 50px; display: flex; justify-content: center; }
+        .pricing-container { display: flex; gap: 20px; align-items: stretch; max-width: 1000px; }
+        .pricing-card { background: #fff; border: 1px solid #ddd; border-radius: 12px; padding: 30px; flex: 1; text-align: center; display: flex; flex-direction: column; transition: 0.3s; }
+        .pricing-card:hover { 
+            border: 2px solid #6366f1; 
+            transform: scale(1.05) translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+        }
+        h3 { font-size: 1.2rem; color: #333; }
+        .price { font-size: 2.5rem; font-weight: bold; margin: 15px 0; }
+        .price span { font-size: 1rem; color: #777; }
+        ul { list-style: none; padding: 0; margin: 20px 0; flex-grow: 1; }
+        li { margin-bottom: 10px; color: #555; font-size: 0.9rem; }
+        .cta-button { 
+            background: #6366f1; 
+            color: white; 
+            border: none; 
+            padding: 12px; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            font-weight: bold; 
+        }
+        .nav-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h3>Free</h3>
+            <div class="price">$0<span>/mo</span></div>
+            <ul><li>1 user</li><li>Basic support</li><li>Access to community</li></ul>
+            <button class="cta-button">Sign Up</button>
+        </div>
+        <div class="pricing-card">
+            <h3>Pro</h3>
+            <div class="price">$19<span>/mo</span></div>
+            <ul><li>Up to 5 users</li><li>Email support</li><li>Advanced analytics</li></ul>
+            <button class="cta-button">Get Started</button>
+        </div>
+        <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <div class="price">$49<span>/mo</span></div>
+            <ul><li>Unlimited users</li><li>Priority support</li><li>Custom solutions</li></ul>
+            <button class="cta-button">Contact Us</button>
+        </div>
+    </div>
+    <a href="Signup.html" class="nav-button">Assignment 3 →</a>
+</body>
+</html>
