@@ -1,0 +1,90 @@
+:root {
+  --primary: #2563eb;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text: #1e293b;
+  --border: #e2e8f0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  margin: 0;
+  padding: 2rem;
+}
+
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* List View */
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.note-item {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.note-item:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Detail View & Form */
+.note-detail, form {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0 1.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+textarea {
+  height: 200px;
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button[type="button"] {
+  background: #64748b;
+  margin-left: 0.5rem;
+}
+
+.timestamp {
+  color: #64748b;
+  font-size: 0.85rem;
+}
